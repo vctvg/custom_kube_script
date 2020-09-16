@@ -9,15 +9,12 @@ import (
 )
 
 func main() {
-
 	config, err := clientcmd.BuildConfigFromFlags("", "config")
-
 	if err != nil{
 		panic(err.Error())
 	}
 
 	clientset, err := kubernetes.NewForConfig(config)
-
 	if err != nil{
 		panic(err.Error())
 	}
