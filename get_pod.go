@@ -22,3 +22,4 @@ func main() {
 	pods, _ := clientset.CoreV1().Pods("kube-system").List(context.TODO(), metav1.ListOptions{})
 	fmt.Printf("There are %d pods in the cluster\n", len(pods.Items))
 }
+
