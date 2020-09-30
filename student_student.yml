@@ -1,0 +1,7 @@
+apiVersion: test-controller.io/v1
+kind: Student
+metadata:
+  name: student
+spec:
+  name: "Tom"
+  school: "Oxford"
